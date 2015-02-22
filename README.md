@@ -13,7 +13,7 @@ package.json
 ```
 
 ```less
-@diet-tag-url: '../dist/img';
+@diet-tags-url: '../dist/img';
 @import "./node_modules/diet-tags/index.less"
 ```
 
