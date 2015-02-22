@@ -1,7 +1,7 @@
 {
   "name": "diet-tags",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Avenir",
   "main": "index.js",
   "scripts": {
