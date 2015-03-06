@@ -13,8 +13,11 @@ package.json
 ```
 
 ```less
-@diet-tags-url: '../dist/img';
 @import "./node_modules/diet-tags/index.less"
+
+@img-base-url: '../dist/img';
+@diet-tag-size: 20px;
+#components > .diet-tags( @img-base-url, @diet-tag-size );
 ```
 
 ```html
@@ -29,3 +32,12 @@ package.json
 ```
 
 In a build step, copy the files from `diet-tags/img` to a public directory (preferably one that is ignored from vcs).
+
+## API
+
+#### `.diet-tags( @diet-tags-url, @diet-tag-size )`
+
+__Params__
+
+* `@diet-tags-url` - The path where the diet tags images are stored
+* `@diet-tag-size` - The size of the icons
