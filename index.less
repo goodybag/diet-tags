@@ -3,13 +3,17 @@
 */
 
 #components {
-  .diet-tags ( @diet-tags-url, @diet-tag-size: 20px ){
+  .diet-tags ( @diet-tags-url, @diet-tag-size: 20px, @gutter: 5px ){
     .diet-tag {
       display: inline-block;
       vertical-align: bottom;
       width: @diet-tag-size + 1;
       height: @diet-tag-size;
       background-size: @diet-tag-size + 1;
+
+      &:first-child ~ & {
+        margin-left: @gutter;
+      }
     }
 
     ul > .diet-tag {
@@ -19,6 +23,8 @@
     ul.diet-tags {
       margin: 0;
       padding: 0;
+      // Remove whitespace
+      font-size: 0;
     }
 
     .diet-tag-gluten-free { background-image: url('@{diet-tags-url}/01_gluten.svg'); }
