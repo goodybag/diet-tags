@@ -35,9 +35,10 @@ In a build step, copy the files from `diet-tags/img` to a public directory (pref
 
 ## API
 
-#### `.diet-tags( @diet-tags-url, @diet-tag-size )`
+#### `.diet-tags( @diet-tags-url, @diet-tag-size: 20px, @gutter: 5px )`
 
 __Params__
 
 * `@diet-tags-url` - The path where the diet tags images are stored
 * `@diet-tag-size` - The size of the icons
+* `@gutter`        - Space between icons
